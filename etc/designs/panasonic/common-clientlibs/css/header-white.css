@@ -1,0 +1,51 @@
+@charset "UTF-8";
+#globalheader {
+	background: none!important;
+	background-color:#fff!important;
+}
+#globalheader-nav .main_menu li a {
+	color: #1f1f1f!important;
+	text-shadow: none!important;
+}
+#globalheader-nav .main_menu li a:hover,
+#globalheader-nav .main_menu li.active a {
+	color: #777777!important;
+}
+#globalheader-secondarynav ul.main > li > a:not(.lang) {
+	color: #1f1f1f!important;
+}
+#globalheader-secondarynav ul.main > li > a:hover {
+	color: #777777!important;
+}
+#globalheader-secondarynav ul.main > li a.lang {
+	color:#005F9B;
+}
+@media only screen and (max-width: 640px) and (max-device-width:1280px) {
+	#globalheader #brandlogo.mobile-original a {
+		background:none!important;
+	}
+	#globalheader button.toggleMenu {
+		border-left-color:#efefef!important;
+	}
+	#globalheader button.toggleMenu span {
+		border-left-color:#d5d5d5!important;
+	}
+	#nav-menu-mob > ul {
+		background-color:#3b3b3b!important;
+	}
+	#search-autocomplete,
+	#search-normal {
+	}
+	#search-autocomplete .search-autocomplete-label,
+	#search-normal .search-normal-mobile-label {
+		border-left-color:#efefef!important;
+	}
+	#search-autocomplete.active .search-autocomplete-label,
+	#search-normal.active .search-normal-mobile-label {
+		background:#d5d5d5!important;
+	}
+	#search-autocomplete .search-autocomplete-label .label,
+	#search-normal .search-normal-mobile-label .label {
+		border-left-color:#d5d5d5!important;
+	}
+}

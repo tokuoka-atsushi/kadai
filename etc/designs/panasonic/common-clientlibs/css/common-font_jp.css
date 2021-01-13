@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@font-face {
+	font-family: 'Open Sans Condensed';
+	src: local("ヒラギノ角ゴ Pro W3"),  local("HiraginoSans-W3"),  local("メイリオ"),  local("Meiryo");
+	unicode-range: U+0180-019F,U+01A2-01AE,U+01B1-02FF,U+0302,U+0304-0308,U+030A-030E,U+0310-0322,U+0324-0383,U+03CF-03FF,U+0514-1E9F,U+1EFA-2012,U+2015-2017,U+201B,U+201F-2021,U+2023-2038,U+203B-20AA,U+20AD-FFFF;
+}
+
+body {
+	font-family: Arial, Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+input[type="text"], textarea {
+	font-family: Arial, Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", Meiryo, sans-serif;
+}
+
+#globalheader-nav .main_menu > li > a,
+#globalheader-nav .main_menu .main-nav-root__title > a {
+  font-family: "Open Sans Condensed", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+}
+
+#search-normal #searchformhead input[type=text] {
+  font-family: "Open Sans Condensed", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+}
+
+#globalfooter-nav a {
+  font-family: "Open Sans Condensed", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+}
+
+@media only screen and (max-width: 640px) and (max-device-width: 1280px) {
+  #nav-menu-mob li a {
+    font-family: "Open Sans Condensed", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+  }
+}

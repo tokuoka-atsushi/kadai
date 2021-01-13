@@ -1,0 +1,58 @@
+
+[v-cloak] {
+    display: none;
+}
+
+.container {
+    width: 976px;
+}
+
+.Items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.Items__item {
+    width: 49.3%;
+    height: 289px;
+    position: relative;
+    color: #fff;
+    box-sizing: border-box;
+    margin-bottom: 1.4%;
+}
+.Items__img {
+    width: 100%;
+}
+.Items__textarea {
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    padding: 0 15px;
+}
+.Items__title { 
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.Items__subtext {
+    font-size: 12px;
+}
+
+@media only screen and (max-width:640px) and (max-device-width:1280px) {
+    .container {
+        width: 94%;
+        margin: 0 auto;
+    }
+    .Items {
+        flex-direction: column;
+    }
+    .Items__item {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+}
+
+

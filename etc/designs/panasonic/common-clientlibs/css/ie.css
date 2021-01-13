@@ -1,0 +1,9 @@
+/* .barshare {
+	-pie-border-radius: 2px;
+	behavior: url(/etc/designs/panasonic/clientlibs/css/PIE.htc);
+*/
+
+#firmaware_chk input[type="checkbox"]{
+	float: left;
+    margin-top: -3px;
+}
