@@ -72,10 +72,20 @@ document.write('<meta name="viewport" content="width=980" />');
 	<div class="basic-page">
 		<div id="sections">
 			<div class="content parsys wpmparsys">
-				<div id="dummy_contents" style="padding:100px 0; text-align:center;">
+				<div id="dummy_contents" class="wrapper">
 					<div class="container">
-						<div id="app">
-							<item-list></item-list>
+						<div id="ItemList">
+							<ul class="Items">
+								<li v-for="item in this.items" :key="item.num" class="Items__item">
+									<div class="Items__imgarea">
+										<img src="http://placehold.jp/24/cc9999/993333/482x289.png" class="Items__img">
+									</div>
+									<div class="Items__textarea">
+										<p class="Items__title">{{ item.title }}</p>
+										<p class="Items__subtext">{{ item.familyName }}</p>
+									</div>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -92,7 +102,7 @@ document.write('<meta name="viewport" content="width=980" />');
 	</footer>
 </div>
 <!-- end #page --> 
-
+<script src="https://polyfill.io/v3/polyfill.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="js/main.js"></script>
