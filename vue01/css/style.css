@@ -40,7 +40,6 @@
 
 .Items__item {
     width: 49.3%;
-    height: 289px;
     position: relative;
     color: #fff;
     box-sizing: border-box;
@@ -49,7 +48,6 @@
 @media only screen and (max-width:640px) and (max-device-width:1280px) {
     .Items__item {
         width: 100%;
-        height: auto;
         margin-bottom: 15px;
     }
 }
