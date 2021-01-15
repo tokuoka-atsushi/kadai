@@ -3,7 +3,7 @@
     display: none;
 }
 
-.wrapper {
+.Wrapper {
     padding:70px 0 100px;
 }
 @media only screen and (max-width:640px) and (max-device-width:1280px) {
@@ -12,7 +12,7 @@
     }
 }
 
-.container {
+.Container {
     width: 976px;
 }
 
