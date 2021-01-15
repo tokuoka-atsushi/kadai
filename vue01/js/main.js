@@ -8,6 +8,11 @@ function getItemList() {
         data: {
             items: [],
         },
+        computed: {
+            itemLength: function() {
+                return this.items.length;
+            }
+        },
         created: function() {
             axios.get('../../common/js/data.json').then(function(response) {
                 this.items = response.data
