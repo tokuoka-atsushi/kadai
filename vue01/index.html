@@ -76,13 +76,15 @@ document.write('<meta name="viewport" content="width=980" />');
 					<div id="ItemList">
 						<ul class="Items">
 							<li v-for="item in items" :key="item.num" class="Items__item">
-								<div class="Items__imgarea">
-									<img src="http://placehold.jp/24/cc9999/993333/482x289.png" class="Items__img">
-								</div>
-								<div class="Items__textarea">
-									<p class="Items__title">{{ item.title }}</p>
-									<p class="Items__subtext">{{ item.familyName }}</p>
-								</div>
+								<a :href="item.url">
+									<div class="Items__imgarea">
+										<img src="http://placehold.jp/24/cc9999/993333/482x289.png" class="Items__img">
+									</div>
+									<div class="Items__textarea">
+										<p class="Items__title">{{ item.title }}</p>
+										<p class="Items__subtext">{{ item.familyName }}</p>
+									</div>
+								</a>
 							</li>
 						</ul>
 					</div>

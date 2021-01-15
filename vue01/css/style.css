@@ -41,7 +41,6 @@
 .Items__item {
     width: 49.3%;
     position: relative;
-    color: #fff;
     box-sizing: border-box;
     margin-bottom: 1.4%;
 }
@@ -80,6 +79,7 @@
     padding: 15px;
     box-sizing: border-box;
     background: linear-gradient(to top,rgba(0,0,0,0.6) 50%,transparent);
+    color: #fff;
 }
 @media only screen and (max-width:640px) and (max-device-width:1280px) {
     .Items__textarea {
