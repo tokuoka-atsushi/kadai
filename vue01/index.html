@@ -73,21 +73,71 @@ document.write('<meta name="viewport" content="width=980" />');
 		<div class="content parsys wpmparsys">
 			<div class="Wrapper">
 				<div class="Container">
-					<div id="ItemList">
+					<div id="ItemList" v-cloak>
 						<p>すべての件数：{{ itemLength }}件</p>
-						<ul class="Items">
-							<li v-for="item in items" :key="item.num" class="Items__item">
-								<a :href="item.url">
-									<div class="Items__imgarea">
-										<img src="http://placehold.jp/24/cc9999/993333/482x289.png" class="Items__img">
-									</div>
-									<div class="Items__textarea">
-										<p class="Items__title">{{ item.title }}</p>
-										<p class="Items__subtext">{{ item.familyName }}</p>
-									</div>
-								</a>
-							</li>
-						</ul>
+						<!-- 木造 -->
+						<div v-if="matchMokuzou.list.length > 0">
+							<h2 class="SectionTitle TextCenter MarginTop40 MarginBottom40">
+								{{ matchMokuzou.title }}
+								<span class="SectionTitle__subText">{{matchMokuzou.subTitle}}</span>
+							</h2>
+							<ul class="Items">
+								<li v-for="item in matchMokuzou_limited" :key="item.num" class="Items__item">
+									<a :href="item.url">
+										<div class="Items__imgarea">
+											<img src="http://placehold.jp/24/cc9999/993333/482x289.png" class="Items__img">
+										</div>
+										<div class="Items__textarea">
+											<p class="Items__title">{{ item.title }}</p>
+											<p class="Items__subtext">{{ item.familyName }}</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						
+						<!-- パナソニック ホームズの住まい -->
+						<div v-if="matchHomes.list.length > 0">
+							<h2 class="SectionTitle TextCenter MarginTop40 MarginBottom40">
+								{{ matchHomes.title }}
+								<span class="SectionTitle__subText">{{matchHomes.subTitle}}</span>
+							</h2>
+							<ul class="Items">
+								<li v-for="item in matchHomes_limited" :key="item.num" class="Items__item">
+									<a :href="item.url">
+										<div class="Items__imgarea">
+											<img src="http://placehold.jp/24/cc9999/993333/482x289.png" class="Items__img">
+										</div>
+										<div class="Items__textarea">
+											<p class="Items__title">{{ item.title }}</p>
+											<p class="Items__subtext">{{ item.familyName }}</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<!-- RC・鉄骨造 -->
+						<div v-if="matchRc.list.length > 0">
+							<h2 class="SectionTitle TextCenter MarginTop40 MarginBottom40">
+								{{ matchRc.title }}
+								<span class="SectionTitle__subText">{{matchRc.subTitle}}</span>
+							</h2>
+							<ul class="Items">
+								<li v-for="item in matchRc_limited" :key="item.num" class="Items__item">
+									<a :href="item.url">
+										<div class="Items__imgarea">
+											<img src="http://placehold.jp/24/cc9999/993333/482x289.png" class="Items__img">
+										</div>
+										<div class="Items__textarea">
+											<p class="Items__title">{{ item.title }}</p>
+											<p class="Items__subtext">{{ item.familyName }}</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+
 					</div>
 				</div>
 			</div>

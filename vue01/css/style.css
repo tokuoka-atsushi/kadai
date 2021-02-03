@@ -3,8 +3,26 @@
     display: none;
 }
 
+
+/* ----------------------
+  Helper 
+------------------------*/
+/* Text-align */
+.TextCenter {
+    text-align: center;
+}
+/* Margin */
+.MarginTop40 {
+    margin-top: 40px !important;
+}
+.MarginBottom40 {
+    margin-bottom: 40px !important;
+}
+
 .Wrapper {
     padding:70px 0 100px;
+    background-color: #333333;
+    color: #fff;
 }
 @media only screen and (max-width:640px) and (max-device-width:1280px) {
     .Wrapper {
@@ -21,6 +39,19 @@
         width: 94%;
         margin: 0 auto;
     }
+}
+
+/* SectionTitle */
+.SectionTitle {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: serif;
+    color: #fff;
+}
+.SectionTitle .SectionTitle__subText {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
 }
 
 /* Item component */
