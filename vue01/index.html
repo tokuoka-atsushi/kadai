@@ -76,8 +76,8 @@ document.write('<meta name="viewport" content="width=980" />');
 					<div id="ItemList" v-cloak>
 						<p>すべての件数：{{ itemLength }}件</p>
 						<!-- 木造 -->
-						<div v-if="matchMokuzou.list.length > 0">
-							<h2 class="SectionTitle TextCenter MarginTop40 MarginBottom40">
+						<div class="MarginTop40" v-if="matchMokuzou.list.length > 0">
+							<h2 class="SectionTitle TextCenter MarginBottom40">
 								{{ matchMokuzou.title }}
 								<span class="SectionTitle__subText">{{matchMokuzou.subTitle}}</span>
 							</h2>
@@ -94,11 +94,15 @@ document.write('<meta name="viewport" content="width=980" />');
 									</a>
 								</li>
 							</ul>
+							<button class="MoreBtn MarginAuto MarginTop20" @click="viewMore(matchMokuzou)">
+								<span class="MoreBtn__icon"></span>
+								もっと見る
+							</button>
 						</div>
 						
 						<!-- パナソニック ホームズの住まい -->
-						<div v-if="matchHomes.list.length > 0">
-							<h2 class="SectionTitle TextCenter MarginTop40 MarginBottom40">
+						<div class="MarginTop40" v-if="matchHomes.list.length > 0">
+							<h2 class="SectionTitle TextCenter MarginBottom40">
 								{{ matchHomes.title }}
 								<span class="SectionTitle__subText">{{matchHomes.subTitle}}</span>
 							</h2>
@@ -115,11 +119,15 @@ document.write('<meta name="viewport" content="width=980" />');
 									</a>
 								</li>
 							</ul>
+							<button class="MoreBtn MarginAuto MarginTop20" @click="viewMore(matchHomes)">
+								<span class="MoreBtn__icon"></span>
+								もっと見る
+							</button>
 						</div>
 
 						<!-- RC・鉄骨造 -->
-						<div v-if="matchRc.list.length > 0">
-							<h2 class="SectionTitle TextCenter MarginTop40 MarginBottom40">
+						<div class="MarginTop40" v-if="matchRc.list.length > 0">
+							<h2 class="SectionTitle TextCenter MarginBottom40">
 								{{ matchRc.title }}
 								<span class="SectionTitle__subText">{{matchRc.subTitle}}</span>
 							</h2>
@@ -136,6 +144,10 @@ document.write('<meta name="viewport" content="width=980" />');
 									</a>
 								</li>
 							</ul>
+							<button class="MoreBtn MarginAuto MarginTop20" @click="viewMore(matchRc)">
+								<span class="MoreBtn__icon"></span>
+								もっと見る
+							</button>
 						</div>
 
 					</div>

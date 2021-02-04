@@ -10,32 +10,37 @@ function getItemList() {
             matchMokuzou: {
                 title: '木造',
                 subTitle: 'WOODEN HOUSE',
-                list: []
+                list: [],
+                limit: 10,
             },
             matchHomes: {
                 title: 'パナソニック ホームズの住まい',
                 subTitle: 'Panasonic Homes HOUSE',
-                list: []
+                list: [],
+                limit: 10,
             },
             matchRc: {
                 title: 'RC・鉄骨造',
                 subTitle: 'RC・STEEL FRAME',
-                list: []
+                list: [],
+                limit: 10,
             },
-            limit: 10,
         },
         computed: {
             itemLength: function() {
                 return this.items.length;
             },
             matchMokuzou_limited: function() {
-                return this.matchMokuzou.list.slice(0, this.limit)
+                const target = this.matchMokuzou
+                return target.list.slice(0, target.limit)
             },
             matchHomes_limited: function() {
-                return this.matchHomes.list.slice(0, this.limit)
+                const target = this.matchHomes
+                return target.list.slice(0, target.limit)
             },
             matchRc_limited: function() {
-                return this.matchRc.list.slice(0, this.limit)
+                const target = this.matchRc
+                return target.list.slice(0, target.limit)
             },
         },
         created: function() {
@@ -52,5 +57,11 @@ function getItemList() {
                 });
             }.bind(this));
         },
+        methods: {
+            viewMore: function(el) {
+                const target = el
+                target.limit = target.list.length
+            }
+        }
     });
 }
