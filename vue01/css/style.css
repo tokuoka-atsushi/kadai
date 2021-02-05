@@ -7,14 +7,18 @@
 /* ----------------------
   Helper 
 ------------------------*/
+/* Display */
+.DisplayNone {
+    display: none !important;
+}
 /* Text-align */
 .TextCenter {
     text-align: center;
 }
 /* Margin */
 .MarginAuto {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 .MarginTop20 {
     margin-top: 20px !important;

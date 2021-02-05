@@ -94,7 +94,11 @@ document.write('<meta name="viewport" content="width=980" />');
 									</a>
 								</li>
 							</ul>
-							<button class="MoreBtn MarginAuto MarginTop20" @click="viewMore(matchMokuzou)">
+							<button 
+								class="MoreBtn MarginAuto MarginTop20" 
+								:class="{DisplayNone: matchMokuzou.moreBtnFlg}" 
+								@click="viewMore(matchMokuzou)"
+							>
 								<span class="MoreBtn__icon"></span>
 								もっと見る
 							</button>
@@ -119,7 +123,11 @@ document.write('<meta name="viewport" content="width=980" />');
 									</a>
 								</li>
 							</ul>
-							<button class="MoreBtn MarginAuto MarginTop20" @click="viewMore(matchHomes)">
+							<button 
+								class="MoreBtn MarginAuto MarginTop20" 
+								:class="{DisplayNone: matchHomes.moreBtnFlg}" 
+								@click="viewMore(matchHomes)"
+							>
 								<span class="MoreBtn__icon"></span>
 								もっと見る
 							</button>
@@ -144,7 +152,11 @@ document.write('<meta name="viewport" content="width=980" />');
 									</a>
 								</li>
 							</ul>
-							<button class="MoreBtn MarginAuto MarginTop20" @click="viewMore(matchRc)">
+							<button 
+								class="MoreBtn MarginAuto MarginTop20" 
+								@click="viewMore(matchRc)"
+								:class="{DisplayNone: matchRc.moreBtnFlg}" 
+							>
 								<span class="MoreBtn__icon"></span>
 								もっと見る
 							</button>

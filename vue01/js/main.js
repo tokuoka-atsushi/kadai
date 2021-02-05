@@ -12,18 +12,21 @@ function getItemList() {
                 subTitle: 'WOODEN HOUSE',
                 list: [],
                 limit: 10,
+                moreBtnFlg: false,
             },
             matchHomes: {
                 title: 'パナソニック ホームズの住まい',
                 subTitle: 'Panasonic Homes HOUSE',
                 list: [],
                 limit: 10,
+                moreBtnFlg: false,
             },
             matchRc: {
                 title: 'RC・鉄骨造',
                 subTitle: 'RC・STEEL FRAME',
                 list: [],
                 limit: 10,
+                moreBtnFlg: false,
             },
         },
         computed: {
@@ -60,7 +63,11 @@ function getItemList() {
         methods: {
             viewMore: function(el) {
                 const target = el
-                target.limit = target.list.length
+                target.limit += 10
+
+                if(target.limit > target.list.length) {
+                    target.moreBtnFlg = true
+                }
             }
         }
     });
